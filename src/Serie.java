@@ -6,6 +6,7 @@ public class Serie {
     boolean entregrado;
     String genero;
     String creador;
+    String aux;
 
     Scanner sc = new Scanner(System.in);
     public Serie(){
@@ -22,6 +23,7 @@ public class Serie {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+
     }
 
     public int getNumeroTemporadas() {
@@ -83,14 +85,11 @@ public class Serie {
     }
 
     public void titulo(){
-        System.out.println("Titulo: " );
-        titulo = sc.nextLine();
-        setTitulo(titulo);
-        System.out.println("Temporadas: " + getNumeroTemporadas());
-        System.out.println("Entregado: " + entregrado);
-        System.out.println("Genero: " + getGenero());
-        System.out.println("Creador: ");
-        creador = sc.nextLine();
-        setCreador(creador);
+        System.out.println("Contructor titulo y creador");
+
+        setTitulo(aux);
+        System.out.print("Ingrese el creador: ");
+        aux = sc.nextLine();
+        setCreador(aux);
     }
 }
