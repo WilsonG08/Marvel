@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Serie {
     String titulo;
     int numeroTemporadas;
@@ -5,6 +7,7 @@ public class Serie {
     String genero;
     String creador;
 
+    Scanner sc = new Scanner(System.in);
     public Serie(){
         titulo="Breaking Bad";
         numeroTemporadas=3;
@@ -51,5 +54,31 @@ public class Serie {
 
     public void setCreador(String creador) {
         this.creador = creador;
+    }
+
+    public int menu ()
+    {
+        int op = 0;
+        do {
+            System.out.println("\n ->->->->-> MARVEL <-<-<-<-<-");
+            System.out.println(" ================================= ");
+            System.out.println("|1. Constructor por defecto       |");
+            System.out.println("|2. Constructor titulo creador    |");
+            System.out.println("|3. Constructor atributos         |");
+            System.out.println("|0. Salir                         |");
+            System.out.println(" ================================= ");
+            System.out.print("Opcion: ");
+            op = sc.nextInt();
+
+        }while (op < 0 || op > 3);
+        return op;
+    }
+
+    public void defecto(){
+        System.out.println("Titulo: " + getTitulo());
+        System.out.println("Temporadas: " + getNumeroTemporadas());
+        System.out.println("Entregado: " + entregrado);
+        System.out.println("Genero: " + getGenero());
+        System.out.println("Creador: " + getCreador());
     }
 }
