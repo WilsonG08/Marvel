@@ -1,7 +1,7 @@
 public class Serie {
     String titulo;
-    int numeroTemporadas=3;
-    boolean entregrado=false;
+    int numeroTemporadas;
+    boolean entregrado;
     String genero;
     String creador;
 
