@@ -81,4 +81,16 @@ public class Serie {
         System.out.println("Genero: " + getGenero());
         System.out.println("Creador: " + getCreador());
     }
+
+    public void titulo(){
+        System.out.println("Titulo: " );
+        titulo = sc.nextLine();
+        setTitulo(titulo);
+        System.out.println("Temporadas: " + getNumeroTemporadas());
+        System.out.println("Entregado: " + entregrado);
+        System.out.println("Genero: " + getGenero());
+        System.out.println("Creador: ");
+        creador = sc.nextLine();
+        setCreador(creador);
+    }
 }

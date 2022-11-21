@@ -11,6 +11,9 @@ public class main {
                     System.out.println("Constructor por defecto");
                     marvel.defecto();
                     break;
+                case 2:
+                    System.out.println("Contructor titulo y creador");
+                    marvel.titulo();
             }
         }while(op != 0);
     }
